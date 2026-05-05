@@ -1,0 +1,20 @@
+# ============================================================
+# FILE: wazuh-exporter.service
+# ============================================================
+[Unit]
+Description=Wazuh Prometheus Exporter
+Documentation=https://github.com/Koshin-HL/wazuh-exporter
+After=network.target
+ 
+[Service]
+Type=simple
+WorkingDirectory=/opt/wazuh-exporter
+ExecStart=/usr/bin/python3 /opt/wazuh-exporter/wazuh_exporter.py
+EnvironmentFile=/opt/wazuh-exporter/.env
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+ 
+[Install]
+WantedBy=multi-user.target
