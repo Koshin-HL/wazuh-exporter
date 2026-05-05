@@ -1,0 +1,23 @@
+# ============================================================
+# FILE: .gitignore
+# ============================================================
+# Never commit credentials
+.env
+ 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ 
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
