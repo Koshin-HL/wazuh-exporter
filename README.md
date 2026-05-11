@@ -125,7 +125,7 @@ Use `{window="$window"}` as a label filter in every panel query.
 ## Part of the Koshin-HL Homelab Portfolio
  
 More context in the
-[Telemetry Bridge case study](https://github.com/Koshin-HL).
+[Telemetry Bridge case study](https://portfolio.randymarte.dev/posts/telemetry-bridge/).
  
  
 ---
